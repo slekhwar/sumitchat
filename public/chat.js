@@ -1,5 +1,5 @@
 //Make Connection
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://sumitchat.herokuapp.com/');
 
 //Query DOM
 var message = document.getElementById('message');

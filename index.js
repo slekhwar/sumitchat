@@ -1,10 +1,11 @@
 var express = require('express');
-var socket = require('socket.io');
+var server = require('http').Server(express);
+var socket = require('socket.io')(server);
 
 //App Setup
 var app = express();
 
-var server = app.listen('https://sumitchat.herokuapp.com/', function(){
+var server = app.listen('8080', function(){
 	console.log('listening to port 4000');
 });
 
